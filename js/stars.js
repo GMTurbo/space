@@ -25,7 +25,7 @@ $(document).ready(function(){
   bigBang(); // creating life and the universe and stuff
 
   $( window ).resize(function() {
-    WIDTH = $('#area').width();
+    WIDTH = $('#space').width();
     $(canvas).attr('width', WIDTH).attr('height',WIDTH);
     stars = WIDTH * .15;
   });
@@ -34,10 +34,10 @@ $(document).ready(function(){
 });
 
 function bigBang() {
-  WIDTH = $('#area').width();
-  HEIGHT = $('#area').height();
+  WIDTH = $('#space').width();
+  HEIGHT = $('#space').height();
   
-  canvas = document.getElementById('space');
+  canvas = document.getElementById('space-content');
   $(canvas).attr('width', WIDTH).attr('height',HEIGHT);
   
   con = canvas.getContext('2d');
